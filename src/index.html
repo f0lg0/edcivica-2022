@@ -153,7 +153,7 @@
                                 <p>It shouldn't rely on a centralized authority</p>
                             </li>
                             <li>
-                                <p>It should be transperent</p>
+                                <p>It should be transparent</p>
                             </li>
                             <li>
                                 <p>It should not be expensive</p>
@@ -170,6 +170,139 @@
                         The following article outlines the potential of the blockchain technology to establish a
                         <span>secure, cost efficient, transparent and improved</span> E- voting system that can be established throughout a nation.
                     </p>
+                </div>
+                <div id="implementation">
+                    <h2>Implementation</h2>
+                    <p>
+                        Before diving in this section the reader should know what a <span>smart contract</span> is. In short, a smart contract is a computer
+                        protocol intended to digitally facilitate, verify, or enforce the negotiation or performance of a contract. Smart contracts allow the
+                        performance of credible transactions without <span>third parties</span>.
+                    </p>
+                    <p style="margin-top: 25px">
+                        This blockchain system uses the <span>Proof of Authority</span> consensus algorithm: transactions and blocks are validated by approved
+                        accounts, known as validators. The process is automated and does not require validators to be constantly monitoring their computers. It,
+                        however, does require maintaining the computer (the authority node) uncompromised. With PoA, individuals earn the right to become
+                        validators, so there is an incentive to retain the position that they have gained. By attaching a reputation to identity, validators are
+                        incentivized to uphold the transaction process, as they do not wish to have their identities attached to a negative reputation.
+                    </p>
+                    <h3 style="margin-top: 40px">Election as a smart contract</h3>
+                    <p>
+                        In our election system we have defined an election as a smart contract. So in our network the election is the agreement between the
+                        participating nodes.
+                    </p>
+                    <p>
+                        With this simple definition an election vote is irreversibly secured in the blockchain, the next step is to actually define the nodes'
+                        roles in the blockchain
+                    </p>
+                    <h3 style="margin-top: 40px">Roles</h3>
+                    <p>Every partecipant must have a role:</p>
+                    <h4>Administrator</h4>
+                    <p>
+                        The administrators will manage all the execution of the election. They can create, start, close and display the results of the election.
+                    </p>
+                    <h4>Voters</h4>
+                    <p>
+                        A voter is a basic participant who casts a vote in the election. Voter can verify their eligibility & authenticate themselves and load
+                        election ballots.
+                    </p>
+                    <h4>Constituency nodes</h4>
+                    <p>
+                        These nodes verify the voters by means of accessing smart contracts. If the voter is verified by all the constituency nodes then the
+                        voter’s vote will be considered and appended into the blockchain.
+                    </p>
+                    <h4>Boot nodes</h4>
+                    <p>A boot node will help the constituency nodes reach each other and communicate with each other.</p>
+                    <h3 style="margin-top: 40px">Election process</h3>
+                    <div class="wrapper">
+                        <p>
+                            The election process is carried out by the smart contracts, once the election ballots get created by the administrators voters
+                            authenitcate to the blockchain via a defined way of doing so - that can be via <span>CIE (Italy)</span> or other secure ID systems.
+                            The voter's verification is held again by the administrators. Once a voter successfully registers itself it gains a
+                            <span>unique ID alongside with a security code</span> that must be used to cast a vote.
+                        </p>
+                        <p>
+                            When a voter votes and consensus is reached the voter loses the ability to vote (a property linked to the voter on the system gets
+                            changed) in order to avoid duplicate votes.
+                        </p>
+                        <p>
+                            Once the election finishes every participant in the blockchain should update their ledger copy for ease in counting of the votes.
+                            The smart contracts publish the final count after the election is over & thereby it’s displayed by the administrators. This way
+                            there
+                            <span>cannot</span> be frauds due to the fact that every node counts the votes.
+                        </p>
+                    </div>
+                    <h3 style="margin-top: 40px">Security issues</h3>
+                    <p>
+                        This kind of architecture results secure and efficient but errors and bugs can occur. Human error should always be considered. On an IT
+                        level though the architecture is not vulnerable to
+                        <span>DDoS attacks</span> (the main flaw of blockchain systems) due to the Proof of Authority algorithm (if such attack occurs an
+                        individual would be easily caught.)
+                    </p>
+                    <p>The main concern should be to keep validators nodes uncompromised.</p>
+                    <h3 style="margin-top: 40px">Advantages</h3>
+                    <div class="list_wrapper">
+                        <ul>
+                            <li>
+                                <p>This e-voting system is <span>cost efficient</span>, more than the traditional one</p>
+                            </li>
+                            <li>
+                                <p>Maximum security is provided by the network to all the participants in the election</p>
+                            </li>
+                            <li>
+                                <p><span>No single authority</span> can control the network</p>
+                            </li>
+                            <li>
+                                <p>
+                                    This E-voting provides proof to voter and provides transparency to the voter. In traditional voting system there was no
+                                    guarantee that whether the vote casted by the voter is counted correctly. But in this voting system a voter can verify
+                                    whether his vote was counted correctly to the right candidate.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    In the traditional voting system malpractices can be performed on the polling booth. Coerced voting can be carried out. But
+                                    in this voting system voters can cast their vote with <span>total privacy</span> and it can be done in any location.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 style="margin-top: 40px">Conclusions</h3>
+                    <p>
+                        Blockchain seems to be the next big step torwards a secure, transparent, decentralized, privacy-friendly and cost efficient e-voting
+                        system.
+                    </p>
+                    <h3 style="margin-top: 40px">References</h3>
+
+                    <div class="list_wrapper">
+                        <ul>
+                            <li>
+                                <a href="https://bitcoinwhitepaper.co/bitcoin.pdf" target="_blank" rel="noopener noreferrer">Bitcoin whitepaper</a>
+                            </li>
+                            <li>
+                                <a href="https://www.irjet.net/archives/V6/i9/IRJET-V6I9209.pdf" target="_blank" rel="noopener noreferrer"
+                                    >Introduction to Blockchain Based E-Voting System/</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.section.io/engineering-education/blockchain-as-a-form-of-e-voting/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Blockchain as a form of evoting</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://skemman.is/bitstream/1946/31161/1/Research-Paper-BBEVS.pdf" target="_blank" rel="noopener noreferrer"
+                                    >Blockchain-Based E-Voting System</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.connectedpapers.com/search?q=blockchain%20evoting" target="_blank" rel="noopener noreferrer"
+                                    >Connected papers</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
