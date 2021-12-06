@@ -18,7 +18,7 @@ body {
     color: var(--main-font-color);
 }
 
-.giga_wrapper {
+#giga_wrapper {
     max-width: 1500px;
     margin: auto;
 }

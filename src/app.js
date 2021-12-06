@@ -9,10 +9,15 @@ function check_w_size() {
 }
 
 function init() {
+    const warning = document.getElementById("warning");
+    const content = document.getElementById("giga_wrapper");
+
     if (!check_w_size()) {
-        document.body.style.opacity = 0;
+        content.style.opacity = 0;
+        warning.style.display = "inline";
     } else {
-        document.body.style.opacity = 1;
+        warning.style.display = "none";
+        content.style.opacity = 1;
     }
 }
 
