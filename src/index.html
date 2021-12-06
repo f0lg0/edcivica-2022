@@ -18,7 +18,7 @@
         <div id="giga_wrapper">
             <div id="navbar">
                 <div class="left">
-                    <div class="logo">
+                    <div class="logo" onclick="route_up()">
                         <img src="./assets/logo.svg" alt="logo" />
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     </h1>
                     <h3>Introduction to a secure and modern voting system</h3>
 
-                    <div class="main_btn">
+                    <div class="main_btn" onclick="scroll_to('start')">
                         <p>GET STARTED</p>
                     </div>
                 </div>
@@ -131,6 +131,7 @@
                             allowfullscreen
                         ></iframe>
                     </div>
+                    <span id="start"></span>
                 </div>
 
                 <div id="introduction">

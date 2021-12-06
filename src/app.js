@@ -21,4 +21,17 @@ function init() {
     }
 }
 
+function route_up() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
+
+function scroll_to(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+    });
+}
+
 window.addEventListener("resize", init);
