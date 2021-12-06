@@ -76,6 +76,13 @@ body {
     flex: 0.8;
 }
 
+@media only screen and (max-width: 1500px) {
+    #navbar .left {
+        margin-left: 30px;
+        flex: 0.3;
+    }
+}
+
 @keyframes appear_animation {
     from {
         opacity: 0;
@@ -109,6 +116,12 @@ body {
 
     margin-top: 30px;
     margin-left: 40px;
+}
+
+@media only screen and (max-width: 1380px) {
+    #header .text_section h1 {
+        font-size: 50px;
+    }
 }
 
 #header .text_section h1 span {
@@ -323,4 +336,29 @@ a {
     color: var(--secondary-font-color);
     font-size: 18px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1180px) {
+    #header .text_section h1 {
+        font-size: 42px;
+    }
+    #header .illustrations_section .wrapper {
+        height: 80%;
+        margin-top: 50px;
+    }
+    #features {
+        margin-top: -32px;
+    }
+    .feature .icon svg {
+        width: 35px;
+    }
+    .feature p {
+        font-size: 25px;
+    }
+    #article h2 {
+        font-size: 48px;
+    }
+    .iframe {
+        width: 90%;
+    }
 }
