@@ -304,3 +304,23 @@ a {
 .wrapper p {
     margin-bottom: 20px;
 }
+
+.image {
+    width: 70%;
+    height: 400px;
+
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.image p {
+    font-weight: 300;
+    color: var(--secondary-font-color);
+    font-size: 18px;
+    text-align: center;
+}
