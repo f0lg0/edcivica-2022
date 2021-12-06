@@ -18,6 +18,18 @@ body {
     color: var(--main-font-color);
 }
 
+#warning {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#warning p {
+    font-size: 2rem;
+}
+
 #giga_wrapper {
     max-width: 1500px;
     margin: auto;

@@ -13,11 +13,11 @@ function init() {
     const content = document.getElementById("giga_wrapper");
 
     if (!check_w_size()) {
-        content.style.opacity = 0;
-        warning.style.display = "inline";
+        content.style.display = "none";
+        warning.style.display = "block";
     } else {
         warning.style.display = "none";
-        content.style.opacity = 1;
+        content.style.display = "block";
     }
 }
 
