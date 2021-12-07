@@ -1,7 +1,7 @@
 function check_w_size() {
     const screen_w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-    if (screen_w <= 900) {
+    if (screen_w <= 500) {
         return false;
     }
 
