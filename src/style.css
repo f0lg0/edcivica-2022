@@ -476,3 +476,30 @@ a {
         font-size: 40px;
     }
 }
+@media only screen and (max-width: 400px) {
+    #header .text_section h1 {
+        font-size: 35px;
+    }
+    #header .text_section h3 {
+        font-size: 20px;
+    }
+
+    #header .text_section {
+        padding: 10px;
+        height: auto;
+    }
+
+    #article h2 {
+        font-size: 30px;
+    }
+
+    #article p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .image {
+        display: none;
+    }
+}
